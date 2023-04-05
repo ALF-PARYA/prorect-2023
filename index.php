@@ -1,6 +1,6 @@
 <?php
-include 'var.php';
-include 'func.php';
+include 'includes/var.php';
+include 'includes/func.php';
 ?>
 
 <!DOCTYPE html>
