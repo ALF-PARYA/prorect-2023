@@ -8,12 +8,8 @@
 
         </tr>
         <?php
-        foreach ($bonnets as $key => $bonnet) 
-        if($key < 3) {
-            displayBonnets($bonnet)
-                ?>
-
-            <?php
+        foreach ($bonnets as $key => $bonnet) {
+            displayBonnets($bonnet);
         } ?>
 
 
