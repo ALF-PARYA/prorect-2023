@@ -4,7 +4,7 @@ include 'includes/func.php';
 include 'includes/header.php';
 
 ?>
-    <div class="d-flex">
+    <div class="d-flex justify-content-center ">
 <?php
 
 foreach ($bonnets as $key => $bonnet) {
