@@ -1,45 +1,41 @@
 <?php
-$lorem = 'lorem dioljsqjdqihqs_çhzm';
+$lorem = 'lorem dolores sigmeras';
 $bonnets =
-[
-    ['Bonnet en laine' ,10, $lorem],
-    ['Bonnet en laine bio' , 14, $lorem],
-    ['Bonnet en laine et cachemire' , 20, $lorem],
-    ['Bonnet arc-en-ciel' , 12, $lorem],
-];
-function displayBonnets(array $bonnet){
-    ?><tr>
-    <td>
-        <?php echo $bonnet[0]; ?>
-    </td>
-    <?php 
-    $couleur = 'c2';
-        if($bonnet[1]<= 12 ){ 
-            $couleur = 'c1' ;
-        }?>
-    
-   
-    <td class="<?php echo $couleur ?>">
-        <?php echo $bonnet[1] . '€'; ?> 
-    </td>
-    <td>
-        <?php echo number_format($bonnet[1] / 1.2, 2); ?>
-    </td>
-    <td>
-        <?php echo $bonnet[2]; ?>
-    </td>
-</tr>
-<?php
+    [
+        ['Bonnet en laine', 10, $lorem],
+        ['Bonnet en laine bio', 14, $lorem],
+        ['Bonnet en laine et cachemire', 20, $lorem],
+        ['Bonnet arc-en-ciel', 12, $lorem],
+    ];
+function displayBonnets(array $bonnet)
+{
+    ?>
+    <tr>
+        <td>
+            <?php echo $bonnet[0]; ?>
+        </td>
+        <?php
+        $couleur = 'c2';
+        if ($bonnet[1] <= 12) {
+            $couleur = 'c1';
+        } ?>
+
+
+        <td class="<?php echo $couleur ?>">
+            <?php echo $bonnet[1] . '€'; ?>
+        </td>
+        <td>
+            <?php echo number_format($bonnet[1] / 1.2, 2); ?>
+        </td>
+        <td>
+            <?php echo $bonnet[2]; ?>
+        </td>
+    </tr>
+    <?php
 };
 
-    
-
-    
 
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -65,9 +61,9 @@ function displayBonnets(array $bonnet){
         <?php
         foreach ($bonnets as $key => $bonnet) {
             displayBonnets($bonnet)
-            ?>
+                ?>
 
-        <?php
+            <?php
         } ?>
 
 
