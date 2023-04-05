@@ -24,6 +24,10 @@ function displayBonnets(array $bonnet)
         <td>
             <?php echo $bonnet[2]; ?>
         </td>
+        <td>
+            <img class="w-50" src="<?php echo $bonnet[3]; ?>"  alt="#">
+
+        </td>
     </tr>
     <?php
 };

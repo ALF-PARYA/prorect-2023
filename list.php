@@ -1,7 +1,4 @@
 
-
-
-
 <table>
         <tr>
             <th>Article</th>
@@ -11,7 +8,8 @@
 
         </tr>
         <?php
-        foreach ($bonnets as $key => $bonnet) {
+        foreach ($bonnets as $key => $bonnet) 
+        if($key < 3) {
             displayBonnets($bonnet)
                 ?>
 
