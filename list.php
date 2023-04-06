@@ -1,17 +1,16 @@
+<?php
+include 'includes/header.php';
 
-<table>
-        <tr>
-            <th>Article</th>
-            <th>prix</th>
-            <th>prix ht</th>
-            <th>description</th>
+?>
 
-        </tr>
+    <div class="d-flex justify-content-center">
         <?php
         foreach ($bonnets as $key => $bonnet) {
-            displayBonnets($bonnet);
+            rebond($bonnet);
         } ?>
 
+</div>
 
-
-    </table>
+    <?php
+include 'includes/footer.php';
+?>
