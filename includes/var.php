@@ -13,4 +13,4 @@ $bonnets =
         ['Bonnet arc-en-ciel', 12, $lorem , 'img/bonnet1.png',],
     ];
 
-    
+    $mdp = 'daw';
