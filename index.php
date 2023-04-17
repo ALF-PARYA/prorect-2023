@@ -1,41 +1,20 @@
 <?php
-include 'var.php';
-include 'func.php';
+include 'includes/var.php';
+include 'includes/func.php';
+include 'includes/header.php';
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+    <div class="d-flex justify-content-center ">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tableau</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <table>
-        <tr>
-            <th>Article</th>
-            <th>prix</th>
-            <th>prix ht</th>
-            <th>description</th>
-
-        </tr>
-        <?php
-        foreach ($bonnets as $key => $bonnet) {
-            displayBonnets($bonnet)
-                ?>
-
-            <?php
-        } ?>
-
-
-
-    </table>
-
-</body>
-
-</html>
-
+foreach ($bonnets as $key => $bonnet) {
+    if ($key < 3) {
+        rebond($bonnet);
+    }
+} ?>
+</div>
+<a class="button d-flex justify-content-center " href="list.php">Voir tout les produits</a>
+<?php
+include 'includes/footer.php';
+?>
