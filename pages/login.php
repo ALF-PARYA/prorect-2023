@@ -1,11 +1,3 @@
-<?php 
-include 'includes/header.php';
-var_dump($_POST);
-
-
-
-?>
-
 <form action="" method="post"> 
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">utilisateur</label>

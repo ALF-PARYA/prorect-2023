@@ -55,27 +55,31 @@ var_dump ($errors);
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="?page=home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="list.php">Link</a>
+                        <a class="nav-link" href="?page=list">Link</a>
                     </li>
 
                     <?php
                     if (isset( $_SESSION['nom'])) { ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.php"><?=$_SESSION['nom']; ?> </a>
+                            <a class="nav-link" href="?page=login"><?=$_SESSION['nom']; ?> </a>
                         </li>
                         <?php
                     } else { ?>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="login.php">se connecter</a>
+                            <a class="nav-link" href="?page=login">se connecter</a>
                         </li>
                         <?php
                     } ?>
                     <li class="nav-item">
-                            <a class="nav-link" href="logout.php">déconnecter</a>
+                            <a class="nav-link" href="?page=logout">déconnecter</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=cart">panier</a>
                         </li>
                 </ul>
                 <form class="d-flex">
