@@ -39,7 +39,7 @@ var_dump ($errors);
     <title>tableau</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.js">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css>
 </head>
 
 <body class="col-12">
