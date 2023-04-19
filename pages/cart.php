@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
     }
 }
 
-var_dump($_SESSION['cart']);
+// var_dump($_SESSION['cart']);
 ?>
 
 <table class="table">
@@ -42,7 +42,7 @@ var_dump($_SESSION['cart']);
     </tr>
 
     <?php
-    var_dump($bonnets);
+    // var_dump($bonnets);
     foreach ($_SESSION['cart'] as $id => $quantity) {
         $bonnet = $bonnets[$id];
         $sousTotal = $quantity * $bonnet[1];
