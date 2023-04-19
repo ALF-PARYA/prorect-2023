@@ -39,7 +39,7 @@ var_dump ($errors);
     <title>tableau</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.js">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css>
 </head>
 
 <body class="col-12">
@@ -80,6 +80,10 @@ var_dump ($errors);
                         
                         <li class="nav-item">
                             <a class="nav-link" href="?page=cart">panier</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=contact">contacter</a>
                         </li>
                 </ul>
                 <form class="d-flex">
