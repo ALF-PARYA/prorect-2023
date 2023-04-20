@@ -1,22 +1,22 @@
 <?php
 
-function rebond(array $bonnet, int $id)
+function rebond(Beanie $v , int $id): void
 {
     ?>
     <div class="card" style="width: 18rem;">
-        <img src="<?php echo $bonnet[3]; ?>" class="card-img-top" alt="...">
+        <img src="<?php echo $v ->getImagePath(); ?>" class="card-img-top" alt="...">
         <div class="card-body">
             <p class="card-text">Nom:
-                <?php echo $bonnet[0]; ?>
+                <?php echo $v->getName(); ?>
             </p>
             <p class="card-text">prix:
-                <?php echo $bonnet[1]; ?>€
+                <?php echo $v->getPrice(); ?>€
             </p>
             <p class="card-text">prix HT:
-                <?php echo $bonnet[1]; ?>€
+                <?php echo $v->getPrice(); ?>€
             </p>
             <p class="card-text">
-                <?php echo $bonnet[2]; ?>
+                <?php echo $v->getDescript(); ?>
             </p>
             <a class="btn btn-primary" href="?page=cart&id=<?php echo $id; ?>"> Ajouter au panier</a>
         </div>
