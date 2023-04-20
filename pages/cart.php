@@ -42,10 +42,11 @@ if (isset($_GET['id'])) {
     </tr>
 
     <?php
+    // CECI EST POUR AFFICHER LES INFO !
     // var_dump($bonnets);
     foreach ($_SESSION['cart'] as $id => $quantity) {
         $bonnet = $bonnets[$id];
-        $sousTotal = $quantity * $bonnet[1];
+        $sousTotal = $quantity * $bonnet->getPrice();
 
         ?>
 
@@ -54,10 +55,10 @@ if (isset($_GET['id'])) {
                 <?php echo $id ?>
             </td>
             <td>
-                <?php echo $bonnet[0] ?>
+                <?php echo $bonnet->getName() ?>
             </td>
             <td>
-                <?php echo $bonnet[1] ?>
+                <?php echo $bonnet->getPrice() ?>
             </td>
             <td>
 

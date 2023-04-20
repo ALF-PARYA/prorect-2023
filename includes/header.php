@@ -6,26 +6,28 @@ require_once 'func.php';
 
 $errors = [];
 
-if (isset( $_POST['mail'])){
-    if (empty ($_POST['mot-de-passe'])){
+if (isset($_POST['mail'])) {
+    if (empty($_POST['mot-de-passe'])) {
         $errors[] = "mot de passe vide";
-    }elseif($_POST['mot-de-passe'] != $mdp){
+    } elseif ($_POST['mot-de-passe'] != $mdp) {
         $errors[] = "mot de passe éronné";
-    }else{
+    } else {
         $_SESSION['nom'] = $_POST['mail'];
         echo 'connexion autoriser';
     }
 }
 
-foreach($errors as $error){
+foreach ($errors as $error) {
 
-    ?> <div class="alert alert-primary" role="alert">
-    erreur! 
-  </div><?php
+    ?>
+    <div class="alert alert-primary" role="alert">
+        erreur!
+    </div>
+    <?php
 }
 
 
-var_dump ($errors); 
+var_dump($errors);
 ?>
 
 
@@ -42,7 +44,7 @@ var_dump ($errors);
     <link rel="stylesheet" href="../style.css>
 </head>
 
-<body class="col-12">
+<body class=" col-12">
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
@@ -63,9 +65,11 @@ var_dump ($errors);
                     </li>
 
                     <?php
-                    if (isset( $_SESSION['nom'])) { ?>
+                    if (isset($_SESSION['nom'])) { ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="?page=login"><?=$_SESSION['nom']; ?> </a>
+                            <a class="nav-link" href="?page=login">
+                                <?= $_SESSION['nom']; ?>
+                            </a>
                         </li>
                         <?php
                     } else { ?>
@@ -76,16 +80,16 @@ var_dump ($errors);
                         <?php
                     } ?>
                     <li class="nav-item">
-                            <a class="nav-link" href="?page=logout">déconnecter</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="?page=cart">panier</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="?page=contact">contacter</a>
-                        </li>
+                        <a class="nav-link" href="?page=logout">déconnecter</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=cart">panier</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=contact">contacter</a>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
