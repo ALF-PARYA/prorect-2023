@@ -60,9 +60,8 @@ if (isset($_GET['id'])) {
             <td>
                 <?php echo $bonnet->getPrice() ?>
             </td>
+            
             <td>
-
-
                 <a class="text-decoration-none text-xl text-dark font-weight-bold"
                     href="?page=cart&id=<?php echo $id; ?>&type=dec"> - </a>
 

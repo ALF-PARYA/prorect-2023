@@ -2,6 +2,9 @@
 
 class Beanie {
 
+	public const SIZES_AVAILLABLES = ['S','M','L','XL',];
+	public const MATERIALS = ['laine','soie', 'coton', 'cachemire',];
+	
     private int $id;
 
     private string $name;
@@ -9,6 +12,9 @@ class Beanie {
 	private ?float $price;
     private  string $descript;
     private  string $imagePath;
+
+	private array $tailles = [];
+	private array $matieres = [];
 
     /* ID */
 
@@ -66,5 +72,24 @@ class Beanie {
 	}
 
 
+	/* TAILLES DES PRODUITS */
+	public function getTailles(): array {
+		return $this->tailles;
+	}
 	
+	public function setTailles(array $tailles): self {
+		$this->tailles = $tailles;
+		return $this;
+	}
+
+	/*MATIERES*/
+
+	public function getMatieres(): array {
+		return $this->matieres;
+	}
+	
+	public function setMatieres(array $matieres): self {
+		$this->matieres = $matieres;
+		return $this;
+	}
 }

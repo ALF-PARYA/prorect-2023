@@ -13,7 +13,6 @@ $lorem = 'lorem dolores sigmeras';
 //         ['Bonnet en laine et cachemire', 20, $lorem,'img/bonnet3.png',],
 //         ['Bonnet arc-en-ciel', 12, $lorem , 'img/bonnet1.png',],
 //     ];
-    
 
  $bonnets = [
 (new Beanie())
@@ -22,28 +21,37 @@ $lorem = 'lorem dolores sigmeras';
 ->setName('Bonnet en laine')
 ->setPrice(10)
 ->setDescript ($lorem)
-->setimagePath ('img/bonnet1.png'),
+->setimagePath ('img/bonnet1.png')
+->setTailles (['S','M',])
+->setMatieres (['laine',]),
 
 (new Beanie())
 ->setId(1)
 ->setName('Bonnet en laine bbio')
 ->setPrice(14)
 ->setDescript ($lorem)
-->setimagePath ('img/bonnet1.png'),
+->setimagePath ('img/bonnet1.png')
+->setTailles (['L','XL',])
+->setMatieres (['laine',]),
 
 (new Beanie())
 ->setId(2)
 ->setName('Bonnet en laine et cachemire')
 ->setPrice(20)
 ->setDescript ($lorem)
-->setimagePath ('img/bonnet3.png'),
+->setimagePath ('img/bonnet3.png')
+->setTailles (['M','XL',])
+->setMatieres (['laine','cachemire',]),
 
 (new Beanie())
 ->setId(3)
 ->setName('Bonnet arc-en-ciel')
 ->setPrice(12)
 ->setDescript ($lorem)
-->setimagePath ('img/bonnet1.png'),
+->setimagePath ('img/bonnet1.png')
+->setTailles (['S','M',])
+->setMatieres (['laine',]),
+
 ];
 
 

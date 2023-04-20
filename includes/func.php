@@ -13,7 +13,7 @@ function rebond(Beanie $v , int $id): void
                 <?php echo $v->getPrice(); ?>€
             </p>
             <p class="card-text">prix HT:
-                <?php echo $v->getPrice(); ?>€
+                <?php echo ($v->getPrice()*80)/100; ?>€
             </p>
             <p class="card-text">
                 <?php echo $v->getDescript(); ?>
