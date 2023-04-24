@@ -27,7 +27,6 @@ foreach ($errors as $error) {
 }
 
 
-var_dump($errors);
 ?>
 
 
